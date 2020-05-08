@@ -1,0 +1,28 @@
+output("Введите номер операции:")
+output("1 - +")
+output("2 - -")
+output("3 - *")
+output("4 - /")
+op = to_integer(input())
+
+output("Введите первое число:")
+first = to_integer(input())
+
+output("Введите второе число:")
+second = to_integer(input())
+
+result = case op
+when 1
+  first + second
+when 2
+  first - second
+when 3
+  first * second
+when 4
+  first / second
+else
+  "Неизвестный оператор"
+end
+
+output("Результат:")
+output(result)

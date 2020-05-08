@@ -1,0 +1,12 @@
+fn adult?(x)
+  x >= 18
+end
+
+output("Сколько вам лет?")
+age = to_integer(input())
+
+if adult?(age)
+  output("Вы совершеннолетний")
+else
+  output("Вы не совершеннолетний")
+end
